@@ -1,0 +1,147 @@
+@CHARSET "UTF-8";
+
+body {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 14px;
+	margin:0px;
+}
+
+#main {
+	width: 1150px;
+	padding: 0;
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 20px;
+}
+
+#slider {
+	width: 850px;
+	
+	border: 1px solid #CDCDCD;
+	float: left;
+	background-color: #F5F5F5;
+	margin-bottom: 5px;
+}
+/*content start*/
+
+#content {
+	width: 850px;
+	min-height: 700px;
+	
+	background-color: #FFF;
+	float: left;
+	height: auto;
+	color: #FFF;
+	margin-bottom: 20px;
+	
+}
+
+.title{
+	height: 40px;
+	width: 800px;
+	margin-top: 10px;
+	margin-right: 0px;
+	border-left-style: 10;
+	padding-right: 0px;
+	padding-left: 10px;
+	font-family: "MS Serif", "New York", serif;
+	background-color: #FFF;
+	/* [disabled]color: #39C; */
+}
+.playlist{
+	height: 485px;
+	width: 850px;
+	background-color: #FFF;
+	color: #FFF;
+}
+.videoleft{
+	height: 486px;
+	width: 420px;
+	background-color: #FFF;
+	
+}
+.vd1{
+	height: 230px;
+	width: 420px;
+	background-color: #FFF;
+}
+.vd2{
+	height: 230px;
+	width: 420px;
+	margin-top: 16px;
+	background-color: #FFF;
+}
+.videoright{
+	height: 486px;
+	width: 420px;
+	margin-left: 430px;
+	margin-top: -486px;
+}
+.vr1{
+	height: 158px;
+	width: 205px;
+}
+.vr2{
+	height: 158px;
+	width: 205px;
+	margin-left: 215px;
+	margin-top: -158px;
+}
+.vr3{
+	height: 158px;
+	width: 205px;
+	margin-top: 5px;
+}
+.vr4{
+	height: 158px;
+	width: 205px;
+	margin-left: 215px;
+	margin-top: -158px;
+}
+
+.vr5{
+	height: 158px;
+	width: 205px;
+	margin-top: 5px;
+}
+.vr6{
+	height: 158px;
+	width: 205px;
+	margin-left: 215px;
+	margin-top: -158px;
+}
+.BaiHat{
+	height:auto;
+	margin-bottom:50px;
+}
+
+.baihat_trai{
+	float:left;
+}
+.baihat_phai{
+	float:right;
+}
+#right {
+	width: 280px;
+	min-height: 1100px;
+	float: right;
+	margin-bottom: 5px;
+	height: auto;
+}
+
+#ads {
+	width: 280px;
+	min-height: 280px;
+	margin-top: 8px;
+	margin-bottom: 20px;
+}
+#ads img {
+	margin-bottom: 10px;
+}
+#bxh h1{
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 24px;
+	font-weight: 400;
+	text-transform: uppercase;
+	color: #06F;
+}

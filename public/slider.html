@@ -1,0 +1,75 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<title>Untitled Document</title>
+<link rel="stylesheet" href="css/style.css" type="text/css">
+<script type="text/javascript" src="js/jquery-2.2.3.min.js"></script>
+</head>
+
+<body>
+<div id="slider">
+  <div id='wrapper'>
+    <div id="bigPic">
+    
+    <a target="_blank" href="thatbatngo_baihat.html"> <img  src="images/sl1.jpg" alt="H?y n�i y�u em - Th�y Chi" /></a>
+       <a target="_blank" href="thatbatngo_baihat.html"> <img src="images/sl11.jpg" alt="Th� ch�a g?i anh - H?a Minzy" /></a>
+        <a target="_blank" href="thatbatngo_baihat.html"> <img src="images/sl5.jpg" alt="C� b� m�a ��ng - Th�y Chi, Trung Qu�n Idol" /></a>
+         <a  target="_blank" href="thatbatngo_baihat.html"> <img src="images/sl12.jpg" alt="Th?t b?t ng? - Tr�c Nh�n" /></a>
+         <a target="_blank" href="thatbatngo_baihat.html"> <img src="images/sl7.jpg" alt="H?nh ph�c �� em kh�ng c� - L��ng Minh Trang" /></a> 
+         </div>
+    <ul id="thumbs">
+      <li class='active' rel='1'><img src="imgs/1.jpg" alt="" /></li>
+      <li rel='2'><img src="images/11.jpg" alt="" /></li>
+      <li rel='3'><img src="images/5.jpg" alt="" /></li>
+      <li rel='4'><img src="images/12.jpg" alt="" /></li>
+      <li rel='5'><img src="images/7.jpg" alt="" /></li>
+    </ul>
+  </div>
+  <script type="text/javascript">
+	var currentImage;
+    var currentIndex = -1;
+    var interval;
+    function showImage(index){
+        if(index < $('#bigPic img').length){
+        	var indexImage = $('#bigPic img')[index]
+            if(currentImage){   
+            	if(currentImage != indexImage ){
+                    $(currentImage).css('z-index',2);
+                    clearTimeout(myTimer);
+                    $(currentImage).fadeOut(250, function() {
+					    myTimer = setTimeout("showNext()", 3000);
+					    $(this).css({'display':'none','z-index':1})
+					});
+                }
+            }
+            $(indexImage).css({'display':'block', 'opacity':1});
+            currentImage = indexImage;
+            currentIndex = index;
+            $('#thumbs li').removeClass('active');
+            $($('#thumbs li')[index]).addClass('active');
+        }
+    }
+    
+    function showNext(){
+        var len = $('#bigPic img').length;
+        var next = currentIndex < (len-1) ? currentIndex + 1 : 0;
+        showImage(next);
+    }
+    
+    var myTimer;
+    
+    $(document).ready(function() {
+	    myTimer = setTimeout("showNext()", 3000);
+		showNext(); //loads first image
+        $('#thumbs li').bind('click',function(e){
+        	var count = $(this).attr('rel');
+        	showImage(parseInt(count)-1);
+        });
+	});
+    
+	
+	</script> 
+</div>
+</body>
+</html>

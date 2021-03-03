@@ -1,0 +1,82 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<!-- saved from url=(0062)file:///E:/Giao%20Tiep%20Nguoi%20May/Project/slidervideo.html# -->
+<html xmlns="http://www.w3.org/1999/xhtml"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+<title>Untitled Document</title>
+<link rel="stylesheet" href="./style.css" type="text/css">
+<script type="text/javascript" src="./jquery-2.2.3.min.js"></script>
+</head>
+
+<body>
+<div class="theloai">
+       <a href="file:///E:/Giao%20Tiep%20Nguoi%20May/Project/slidervideo.html#" title="Mới &amp; Hót" style="color:#06F; font-weight:bold"><img src="./next.png" width="15" height="15">Mới &amp; hot</a>
+      <a href="file:///E:/Giao%20Tiep%20Nguoi%20May/Project/slidervideo.html#" title="Hàn Quốc"><img src="./next.png" width="15" height="15">Hàn Quốc</a>
+      <a href="file:///E:/Giao%20Tiep%20Nguoi%20May/Project/slidervideo.html#" title="Clip Vui"><img src="./next.png" width="15" height="15">Clip vui</a>
+      <a href="file:///E:/Giao%20Tiep%20Nguoi%20May/Project/slidervideo.html#" title="Giải Trí"><img src="./next.png" width="15" height="15">Giải trí</a>
+      <a href="file:///E:/Giao%20Tiep%20Nguoi%20May/Project/slidervideo.html#" title="Việt Nam"><img src="./next.png" width="15" height="15">Việt Nam</a>
+      <a href="file:///E:/Giao%20Tiep%20Nguoi%20May/Project/slidervideo.html#" title="Nhạc Hoa"><img src="./next.png" width="15" height="15">Nhạc Hoa</a>
+      <a href="file:///E:/Giao%20Tiep%20Nguoi%20May/Project/slidervideo.html#" title="Hài Kịch"><img src="./next.png" width="15" height="15">Hài kịch</a>
+      <a href="file:///E:/Giao%20Tiep%20Nguoi%20May/Project/slidervideo.html#" title="Âu Mỹ"><img src="./next.png" width="15" height="15">Âu Mỹ</a>
+      <a href="file:///E:/Giao%20Tiep%20Nguoi%20May/Project/slidervideo.html#" title="Nhạc Nhật"><img src="./next.png" width="15" height="15">Nhạc Nhật</a>
+      <a href="file:///E:/Giao%20Tiep%20Nguoi%20May/Project/slidervideo.html#" title="Phim"><img src="./next.png" width="15" height="15">Phim</a>
+      </div>
+<div id="slider">
+    <div id="wrapper">
+      
+        <div id="bigPic"> <img src="./sl1.jpg" alt="Hãy nói yêu em - Thùy Chi" style="display: none; opacity: 1; z-index: 1;"> <img src="./sl11.jpg" alt="Thư chưa gửi anh - Hòa Minzy" style="display: block; opacity: 1; z-index: 1;"> <img src="./sl5.jpg" alt="Cô bé mùa đông - Thùy Chi, Trung Quân Idol" style="display: none; opacity: 1; z-index: 1;"> <img src="./sl12.jpg" alt="Thật bất ngờ - Trúc Nhân" style="display: none; opacity: 1; z-index: 1;"> <img src="./sl7.jpg" alt="Hạnh phúc đó em không có - Lương Minh Trang" style="display: none; opacity: 1; z-index: 1;"> </div>
+        <ul id="thumbs">
+          <li class="" rel="1"><img src="./1.jpg" alt=""></li>
+          <li rel="2" class="active"><img src="./11.jpg" alt=""></li>
+          <li rel="3" class=""><img src="./5.jpg" alt=""></li>
+          <li rel="4" class=""><img src="./12(1).jpg" alt=""></li>
+          <li rel="5" class=""><img src="./7.jpg" alt=""></li>
+        </ul>
+      </div>
+      <script type="text/javascript">
+	var currentImage;
+    var currentIndex = -1;
+    var interval;
+    function showImage(index){
+        if(index < $('#bigPic img').length){
+        	var indexImage = $('#bigPic img')[index]
+            if(currentImage){   
+            	if(currentImage != indexImage ){
+                    $(currentImage).css('z-index',2);
+                    clearTimeout(myTimer);
+                    $(currentImage).fadeOut(250, function() {
+					    myTimer = setTimeout("showNext()", 3000);
+					    $(this).css({'display':'none','z-index':1})
+					});
+                }
+            }
+            $(indexImage).css({'display':'block', 'opacity':1});
+            currentImage = indexImage;
+            currentIndex = index;
+            $('#thumbs li').removeClass('active');
+            $($('#thumbs li')[index]).addClass('active');
+        }
+    }
+    
+    function showNext(){
+        var len = $('#bigPic img').length;
+        var next = currentIndex < (len-1) ? currentIndex + 1 : 0;
+        showImage(next);
+    }
+    
+    var myTimer;
+    
+    $(document).ready(function() {
+	    myTimer = setTimeout("showNext()", 3000);
+		showNext(); //loads first image
+        $('#thumbs li').bind('click',function(e){
+        	var count = $(this).attr('rel');
+        	showImage(parseInt(count)-1);
+        });
+	});
+    
+	
+	</script> 
+    </div>
+
+
+</body></html>

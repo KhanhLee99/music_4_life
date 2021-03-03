@@ -1,0 +1,51 @@
+/* CSS Document */
+
+/* ----- footer ----- */
+.footer{
+	clear:both;
+	margin:10px 0 0 0;
+	height:auto;
+	width:auto;
+	}
+.foot1{
+	background:#EFEFEF;
+	height:70px;
+	}
+.address{
+	background:#6D6E71;
+	font-size:13px;
+	height:200px;
+	width:100%;
+	}
+.infor{
+	float:left;
+	padding:20px;
+	color:#FFF;	
+	}
+.phone{
+	float:right;
+	padding:20px;
+	
+	color:#FFF;
+	}
+.phone img{
+	float:left;
+	margin-right:-20px;
+	}
+.phone .note, .call{
+	float:left;
+	margin-left:30px;
+	}
+.mail{
+	float:right;
+	margin:10px 20px 0 0;
+	}
+.mail a{
+	text-decoration:none;
+	color:#FC3;
+	}
+.mail a:hover{
+	text-decoration:underline;
+	color:#F9C;
+	cursor:pointer;
+	}

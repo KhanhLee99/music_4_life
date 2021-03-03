@@ -1,0 +1,1 @@
+<iframe src="public/slider.html" width="860" height="400" style="border:none;margin-top:7px"></iframe>

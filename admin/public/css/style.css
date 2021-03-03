@@ -1,0 +1,185 @@
+﻿@CHARSET "UTF-8";
+BODY
+{
+	font-family:Arial, Helvetica, sans-serif;
+	color:#444444;
+	font-size:62.5%;
+	min-height: 100%; /*Sets the min height to the
+  height of the viewport.*/
+	width: 100%;
+	height: 100%; /*Effectively, this is min height
+  for IE5+/Win, since IE wrongly expands
+  an element to enclose its content.
+  This mis-behavior screws up modern
+  browsers*/
+	margin: 0;
+	padding: 0;
+
+}
+
+#wrapper{
+	width:850px;
+	/*min-height: 100%;*/
+	height: auto !important;
+	/*height: 100%;*/
+	text-align:left;
+    /*  margin: 0 auto 0px;
+   /* padding:0 10px 0px 10px;*/
+}
+
+.clearfix{
+	clear:both;
+	float:none;
+}
+#bigPic{
+	width:850px;
+	height:300px;
+	padding:0px;
+	border:0px solid #CCC;
+	background-color:#FFF;
+	margin-bottom:0px;
+}
+#bigPic img{
+	position:absolute;
+	display:none;
+}
+ul#thumbs li.active{
+	border:2px solid #000;	
+	background:#fff;
+	padding:2px;
+}
+ul#thumbs, ul#thumbs li{
+	margin:0;
+	padding:0;
+	list-style:none;
+}
+	
+ul#thumbs li{
+	float:left;
+	margin-right:0px;
+	margin-bottom:0px;
+	border:1px solid #CCC;	
+	padding:3px;
+	cursor:pointer;
+}
+ul#thumbs img{
+	float:left;
+	width:162px;
+	height:80px;
+	line-height:80px;
+	overflow:hidden;
+	position:relative;
+	z-index:1;		
+}.title h1 a {
+	color: #06F;
+	text-decoration: none;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 24px;
+	font-weight: 400;
+}
+.pl1 {
+	float: left;
+	width: 158px;
+	margin-right: 10px;
+}
+.song-name {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 14px;
+	color: #000;
+	text-decoration: none;
+	font-weight: normal;
+}
+.song-name:hover {
+	color:#06F;
+}
+.singer-name {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 12px;
+	font-weight: normal;
+	color: #999;
+	text-decoration: none;
+}
+.singer-name:hover {
+	color:#06F;
+}
+#chudehot {
+	height: auto;
+	margin-bottom: 20px;
+}
+#chudehot h1 {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 24px;
+	font-weight: 400;
+	text-transform: uppercase;
+	color: #06F;
+	margin-top: 10px;
+	display: block;
+}
+.item_chude {
+	display: block;
+	list-style-type: none;
+	margin-bottom: 10px;
+}
+.item_chude img {
+	width: 280px;
+}
+.item_chude a {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 16px;
+	color: #000;
+	text-decoration: none;
+	font-weight: normal;
+	display: block;
+	margin-top: 10px;
+}
+.item_chude a:hover {
+	color:#06F;
+}
+.theloai {
+	margin-bottom: 50px;
+}
+.theloai a {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 16px;
+	color: #666;
+	text-decoration: none;
+	display: inline-block;
+	margin-right: 30px;
+	padding: 10px;
+	width: 130px;
+}
+.theloai a:hover {
+	color:#06F;
+}
+.listitembaihat{
+	height:50px;
+	border-bottom:solid 1px #CCC;
+}
+.item_content {
+	float: left;
+	width: 230px;
+	padding-top: 12px;
+}
+.item_listen {
+	float: left;
+	width: 100px;
+	font-size: 12px;
+	padding-top: 10px;
+	margin-left: 50px;
+}
+.item_listen p {
+	color: #000;
+	margin-top: 5px;
+	display: block;
+	float: right;
+}
+
+.item_listen img {
+	height: 20px;
+	width: 20px;
+}
+.quangcao {
+	margin-bottom: 10px;
+	width: 100%;
+	text-align: center;
+}

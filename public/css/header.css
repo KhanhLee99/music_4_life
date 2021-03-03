@@ -1,0 +1,120 @@
+/* CSS Document */
+
+.header {
+    width: auto;
+    height: 70px;
+    background: #F0F0F0;
+    padding: 0px 80px;
+}
+
+
+/* --------------- Logo --------------- */
+
+.logo {
+    display: block;
+    float: left;
+    font-size: 30px;
+    text-shadow: 3px 3px 3px #903;
+    padding: 8px 0px 0 0px;
+}
+
+.logo a {
+    text-decoration: none;
+}
+
+
+/* --------------- Seach -------------- */
+
+.search {
+    float: left;
+    display: block inline;
+    height: 40px;
+    width: 500px;
+    margin: 12px 0px 0px 40px;
+}
+
+.search .searchInput {
+    float: left;
+    width: 400px;
+    height: 40px;
+    font-size: 14px;
+    box-sizing: border-box;
+    border: 1px solid #000;
+    border-radius: 5px;
+    border-color: #333;
+    background-image: url(../Images/t%E1%BA%A3i%20xu%E1%BB%91ng.jpg);
+    background-position: 2px 3px;
+    background-repeat: no-repeat;
+    padding: 0 0 0 40px;
+    -webkit-transition: width 1s ease-in-out;
+    transition: width 1s ease-in-out;
+}
+
+.search .seatchButton {
+    float: left;
+    width: auto;
+    height: 40px;
+    background: #2582BE;
+    boder-radius: 5px;
+    color: #FFF;
+    border: 1px #000;
+    border-radius: 6px;
+    margin-left: 3px;
+    padding: 5px;
+}
+
+.search .seatchButton:hover {
+    background-color: #003;
+    cursor: pointer;
+}
+
+
+/* --------------- Language --------------- */
+
+.language {
+    float: right;
+    padding-top: 8px;
+    width: 180px;
+}
+
+.language div {
+    float: left;
+    font-size: 17px;
+    color: #000;
+    padding-right: 4px;
+}
+
+.language a {
+    display: block;
+    float: left;
+    margin: 0px 7px;
+}
+
+
+/* --------------- Register --------------- */
+
+.user {
+    float: right;
+    margin: 12px 30px 0px 0px;
+}
+
+.user img {
+    float: left;
+}
+
+.user a {
+    float: left;
+    padding: 10px 7px 0px 7px;
+    text-decoration: none;
+    color: #333;
+    font-size: 16px;
+}
+
+.user span {
+    float: left;
+    padding-top: 10px;
+}
+
+.user a:hover {
+    text-decoration: underline;
+}
