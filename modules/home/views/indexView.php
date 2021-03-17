@@ -1,7 +1,149 @@
 <?php
 get_header();
-?>
 
+?>
+<!-- header -->
+<!------------------------- Menu Left : Start -->
+<div class="menuHeader">
+    <div class="menuTop">
+        <ul class="menuTopList" id="ListMenu">
+
+            <!----------- Index -->
+            <li class="dropdown">
+                <a class="active_dropdown" href="trangchu.html" title="Trang chủ" style="border-bottom:solid 4px #333;">Trang chủ</a>
+            </li>
+
+            <!----------- Bài Hát -->
+            <li class="dropdown">
+                <a class="active_dropdown" href="baihat.html" title="Bài hát">Bài hát</a>
+                <div class="dropdown_content">
+                    <div class="dropdown_column">
+                        <?php
+                        $len = count($list_song_cat);
+                        $num1 = round($len / 3);
+                        $num2 = round($len * 2 / 3);
+                        for ($i = 1; $i < $num1; $i++) {
+                        ?>
+                            <a href="?mod=musics&action=index&id=<?php echo $list_song_cat[$i]['id'] ?>" title="<?php echo $list_song_cat[$i]['name'] ?>"><?php echo $list_song_cat[$i]['name'] ?></a>
+                        <?php
+                        }
+                        ?>
+                        <!-- <a href="baihat.html" title="Mới & Hót">Mới & hot</a> -->
+
+                    </div>
+                    <div class="dropdown_column">
+                        <?php
+                        for ($i = $num1; $i < $num2; $i++) {
+                        ?>
+                            <a href="?mod=musics&action=index&id=<?php echo $list_song_cat[$i]['id'] ?>" title="<?php echo $list_song_cat[$i]['name'] ?>"><?php echo $list_song_cat[$i]['name'] ?></a>
+                        <?php
+                        }
+                        ?>
+                    </div>
+                    <div class="dropdown_column">
+                        <?php
+                        for ($i = $num2; $i < $len; $i++) {
+                        ?>
+                            <a href="?mod=musics&action=index&id=<?php echo $list_song_cat[$i]['id'] ?>" title="<?php echo $list_song_cat[$i]['name'] ?>"><?php echo $list_song_cat[$i]['name'] ?></a>
+                        <?php
+                        }
+                        ?>
+                    </div>
+                </div>
+            </li>
+
+            <!----------- Playlist -->
+            <li class="dropdown">
+                <a class="active_dropdown" href="playlist.html" title="Playlist">Playlist</a>
+                <div class="dropdown_content">
+                    <div class="dropdown_column">
+                        <?php
+                        $len = count($list_album);
+                        $num1 = round($len / 3);
+                        $num2 = round($len * 2 / 3);
+                        for ($i = 0; $i < $num1; $i++) {
+                        ?>
+                            <a href="?mod=musics&action=detailMusic&id=1" title="<?php echo $list_album[$i]['name'] ?>"><?php echo $list_album[$i]['name'] ?></a>
+                        <?php
+                        }
+                        ?>
+                        <!-- <a href="playlist.html" title="Mới & Hót">Mới & hot</a> -->
+                        
+                    </div>
+                    <div class="dropdown_column">
+                    <?php
+                        for ($i = $num1; $i < $num2; $i++) {
+                        ?>
+                            <a href="?mod=musics&action=detailMusic&id=1" title="<?php echo $list_album[$i]['name'] ?>"><?php echo $list_album[$i]['name'] ?></a>
+                        <?php
+                        }
+                        ?>
+                    </div>
+                    <div class="dropdown_column">
+                        <?php
+                        for ($i = $num2; $i < $len; $i++) {
+                        ?>
+                            <a href="?mod=musics&action=detailMusic&id=1" title="<?php echo $list_album[$i]['name'] ?>"><?php echo $list_album[$i]['name'] ?></a>
+                        <?php
+                        }
+                        ?>
+                    </div>
+                </div>
+            </li>
+
+            <!----------- Video -->
+            <li class="dropdown">
+                <a class="active_dropdown" href="video.html" title="Video">Video</a>
+                <div class="dropdown_content">
+                    <div class="dropdown_column">
+                        <a href="video.html" title="Mới & Hót">Mới & hot</a>
+                        <a href="#" title="Hàn Quốc">Hàn Quốc</a>
+                        <a href="#" title="Clip Vui">Clip vui</a>
+                        <a href="#" title="Giải Trí Khác">Giải trí </a>
+                    </div>
+                    <div class="dropdown_column">
+                        <a href="videovietnam.html" title="Việt Nam">Việt Nam</a>
+                        <a href="#" title="Nhạc Hoa">Nhạc Hoa</a>
+                        <a href="#" title="Hài Kịch">Hài kịch</a>
+
+                    </div>
+                    <div class="dropdown_column">
+                        <a href="#" title="Âu Mỹ">Âu Mỹ</a>
+                        <a href="#" title="Nhạc Nhật">Nhạc Nhật</a>
+                        <a href="#" title="Phim">Phim</a>
+                    </div>
+                </div>
+            </li>
+
+            <!---------- Bảng XH -->
+            <li class="dropdown">
+                <a class="active_dropdown" href="BXH.html" title="Bảng xếp hạng">BXH</a>
+                <div class="dropdown_content">
+                    <a href="#" title="Việt Nam">Việt Nam</a>
+                    <a href="#" title="Âu Mỹ">Âu Mỹ</a>
+                    <a href="#" title="Trung Đông">Trung Đông</a>
+                    <a href="#" title="Phi Châu">Phi Châu</a>
+                </div>
+            </li>
+
+            <!---------- Nghệ Sĩ -->
+            <li class="dropdown">
+                <a class="active_dropdown" href="#" title="Nghệ sĩ">Nghệ sĩ</a>
+            </li>
+        </ul>
+    </div>
+    <!---------------------- Menu Left : End -->
+
+    <!---------- Menu Right -->
+    <div class="menuRight">
+        <a href="#" class="btt_star">Music4Life VIP</a>
+        <a href="#" class="btt_music" title="Music4Life">Music For Life</a>
+        <a href="#" class="btt_upload">Upload</a>
+    </div>
+</div>
+<div class="clr"></div>
+<!-- MenuHeader : End -->
+<!-- end header -->
 <div id="main">
 
     <?php get_template_part('slider')  ?>
@@ -22,20 +164,19 @@ get_header();
                     if ($count <= 10) {
                         $song_image = get_file_song_image_by_song_id($song['id']);
             ?>
-                        <div class="pl1"> <a href="?mod=musics&action=detailMusic&id=<?php echo $song['id'] ?>"><img src="admin/<?php echo $song_image['file']?>" alt="" style="width: 160px; height:170px;" /></a>
-                            <p><a href="?mod=musics&action=detailMusic&id=<?php echo $song['id'] ?>" style="font-size: 14px " title="<?php echo $song['name'] ?>"  class="song-name">
-                            <?php
-                                $text = $song['name'];    // or $yourtext;
-                                $maxPos = 35;           // Max. number of characters
-                                if (strlen($text) > $maxPos)
-                                {
-                                    $lastPos = ($maxPos - 3) - strlen($text);
-                                    $text = substr($text, 0, strrpos($text, ' ', $lastPos)) . '...';
-                                }
-                                echo $text;
-                                // echo $song['name'] 
-                             ?>
-                             </a> <br><br>
+                        <div class="pl1"> <a href="?mod=musics&action=detailMusic&id=<?php echo $song['id'] ?>"><img src="admin/<?php echo $song_image['file'] ?>" alt="" style="width: 160px; height:170px;" /></a>
+                            <p><a href="?mod=musics&action=detailMusic&id=<?php echo $song['id'] ?>" style="font-size: 14px " title="<?php echo $song['name'] ?>" class="song-name">
+                                    <?php
+                                    $text = $song['name'];    // or $yourtext;
+                                    $maxPos = 35;           // Max. number of characters
+                                    if (strlen($text) > $maxPos) {
+                                        $lastPos = ($maxPos - 3) - strlen($text);
+                                        $text = substr($text, 0, strrpos($text, ' ', $lastPos)) . '...';
+                                    }
+                                    echo $text;
+                                    // echo $song['name'] 
+                                    ?>
+                                </a> <br><br>
                                 <a href="" title="" class="singer-name"><?php echo get_artist_by_id($song['artist_id'])['name'] ?></a>
                         </div>
             <?php
@@ -74,201 +215,6 @@ get_header();
             </div>
             <div class="vr6"> <a href="Roar"><img src="video/f.jpg" alt="Roar" /></a>
                 <p> <a href="Roar" title="Roar" class="song-name">Roar - </a> <a href="Katy Perry" title="Katy Perry" class="singer-name">Katy Perry</a>
-            </div>
-        </div>
-        <div class="title"><span class="title_icon"></span>
-            <h1><a href="baihat.html" style=" color:#39C  ">BÀI HÁT &gt;</a></h1>
-
-            <div class="BaiHat">
-
-                <!----  bat dau bai hat trai ---->
-                <div class="baihat_trai">
-                    <li class="listitembaihat">
-                        <div class="item_content">
-                            <a href="thatbatngo_baihat.html" title="Thật bất ngờ" class="song-name">Thật bất ngờ</a><a href="#" title="Trúc Nhân" class="singer-name"> - Trúc Nhân</a>
-                        </div>
-                        <div class="item_listen">
-                            <img src="video/Headphone.png">
-                            <p>13.242.245</p>
-                        </div>
-
-                    </li>
-                    <li class="listitembaihat">
-                        <div class="item_content">
-                            <a href="#" title="Thật bất ngờ" class="song-name">Người tôi yêu</a><a href="#" title="Trúc Nhân" class="singer-name"> - Chi Dân</a>
-                        </div>
-                        <div class="item_listen">
-                            <img src="video/Headphone.png">
-                            <p>13.242.245</p>
-                        </div>
-
-                    </li>
-                    <li class="listitembaihat">
-                        <div class="item_content">
-                            <a href="#" title="Thật bất ngờ" class="song-name">Chờ ngày mưa tan</a><a href="#" title="Trúc Nhân" class="singer-name"> - Noo Phước Thịnh</a>
-                        </div>
-                        <div class="item_listen">
-                            <img src="video/Headphone.png">
-                            <p>13.242.245</p>
-                        </div>
-
-                    </li>
-                    <li class="listitembaihat">
-                        <div class="item_content">
-                            <a href="thatbatngo_baihat.html" title="Thật bất ngờ" class="song-name">Đơn phương</a><a href="#" title="Trúc Nhân" class="singer-name"> - Nam Du</a>
-                        </div>
-                        <div class="item_listen">
-                            <img src="video/Headphone.png">
-                            <p>13.242.245</p>
-                        </div>
-
-                    </li>
-                    <li class="listitembaihat">
-                        <div class="item_content">
-                            <a href="thatbatngo_baihat.html" title="Thật bất ngờ" class="song-name">Giấc mơ của anh</a><a href="#" title="Trúc Nhân" class="singer-name"> - Mr.Siro</a>
-                        </div>
-                        <div class="item_listen">
-                            <img src="video/Headphone.png">
-                            <p>13.242.245</p>
-                        </div>
-
-                    </li>
-                    <li class="listitembaihat">
-                        <div class="item_content">
-                            <a href="thatbatngo_baihat.html" title="Thật bất ngờ" class="song-name">Tri kỉ</a><a href="#" title="Trúc Nhân" class="singer-name"> - Phan Mạnh Quỳnh/a>
-                        </div>
-                        <div class="item_listen">
-                            <img src="video/Headphone.png">
-                            <p>13.242.245</p>
-                        </div>
-
-                    </li>
-                    <li class="listitembaihat">
-                        <div class="item_content">
-                            <a href="thatbatngo_baihat.html" title="Thật bất ngờ" class="song-name">Lấy anh đi</a><a href="#" title="Trúc Nhân" class="singer-name"> - Nam Cường</a>
-                        </div>
-                        <div class="item_listen">
-                            <img src="video/Headphone.png">
-                            <p>13.242.245</p>
-                        </div>
-
-                    </li>
-                    <li class="listitembaihat">
-                        <div class="item_content">
-                            <a href="thatbatngo_baihat.html" title="Thật bất ngờ" class="song-name">Đừng đi</a><a href="#" title="Trúc Nhân" class="singer-name"> - Hồ Ngọc Hà</a>
-                        </div>
-                        <div class="item_listen">
-                            <img src="video/Headphone.png">
-                            <p>13.242.245</p>
-                        </div>
-
-                    </li>
-                    <li class="listitembaihat">
-                        <div class="item_content">
-                            <a href="thatbatngo_baihat.html" title="Thật bất ngờ" class="song-name">Vô vọng</a><a href="#" title="Trúc Nhân" class="singer-name"> - Hồ Quang Hiếu</a>
-                        </div>
-                        <div class="item_listen">
-                            <img src="video/Headphone.png">
-                            <p>13.242.245</p>
-                        </div>
-
-                    </li>
-                </div>
-                <!--ket thuc bai hat trai-->
-                <div class="baihat_phai">
-                    <li class="listitembaihat">
-                        <div class="item_content">
-                            <a href="thatbatngo_baihat.html" title="Thật bất ngờ" class="song-name">Thôi</a><a href="#" title="Trúc Nhân" class="singer-name"> - Giang Hồng Ngọc</a>
-                        </div>
-                        <div class="item_listen">
-                            <img src="video/Headphone.png">
-                            <p>13.242.245</p>
-                        </div>
-
-                    </li>
-                    <li class="listitembaihat">
-                        <div class="item_content">
-                            <a href="thatbatngo_baihat.html" title="Thật bất ngờ" class="song-name">Vẫn luôn chờ mong</a><a href="#" title="Trúc Nhân" class="singer-name"> - Hương Tràm</a>
-                        </div>
-                        <div class="item_listen">
-                            <img src="video/Headphone.png">
-                            <p>13.242.245</p>
-                        </div>
-
-                    </li>
-                    <li class="listitembaihat">
-                        <div class="item_content">
-                            <a href="thatbatngo_baihat.html" title="Thật bất ngờ" class="song-name">Thất tình</a><a href="#" title="Trúc Nhân" class="singer-name"> - Trịnh Đình Quang</a>
-                        </div>
-                        <div class="item_listen">
-                            <img src="video/Headphone.png">
-                            <p>13.242.245</p>
-                        </div>
-
-                    </li>
-                    <li class="listitembaihat">
-                        <div class="item_content">
-                            <a href="thatbatngo_baihat.html" title="Thật bất ngờ" class="song-name">Người ta nói đúng</a><a href="#" title="Trúc Nhân" class="singer-name"> - Lương Bích Hữu</a>
-                        </div>
-                        <div class="item_listen">
-                            <img src="video/Headphone.png">
-                            <p>13.242.245</p>
-                        </div>
-
-                    </li>
-                    <li class="listitembaihat">
-                        <div class="item_content">
-                            <a href="thatbatngo_baihat.html" title="Thật bất ngờ" class="song-name">Con tim anh nằm đâu</a><a href="#" title="Trúc Nhân" class="singer-name"> - Bảo Thy</a>
-                        </div>
-                        <div class="item_listen">
-                            <img src="video/Headphone.png">
-                            <p>13.242.245</p>
-                        </div>
-
-                    </li>
-                    <li class="listitembaihat">
-                        <div class="item_content">
-                            <a href="thatbatngo_baihat.html" title="Thật bất ngờ" class="song-name">Chỉ là thoáng qua</a><a href="#" title="Trúc Nhân" class="singer-name"> - Thùy Chi</a>
-                        </div>
-                        <div class="item_listen">
-                            <img src="video/Headphone.png">
-                            <p>13.242.245</p>
-                        </div>
-
-                    </li>
-                    <li class="listitembaihat">
-                        <div class="item_content">
-                            <a href="thatbatngo_baihat.html" title="Thật bất ngờ" class="song-name">Để trái tim nghỉ ngơi</a><a href="#" title="Trúc Nhân" class="singer-name"> - Khắc Việt</a>
-                        </div>
-                        <div class="item_listen">
-                            <img src="video/Headphone.png">
-                            <p>13.242.245</p>
-                        </div>
-
-                    </li>
-                    <li class="listitembaihat">
-                        <div class="item_content">
-                            <a href="thatbatngo_baihat.html" title="Thật bất ngờ" class="song-name">Dựa</a><a href="#" title="Trúc Nhân" class="singer-name"> - Maya</a>
-                        </div>
-                        <div class="item_listen">
-                            <img src="video/Headphone.png">
-                            <p>13.242.245</p>
-                        </div>
-
-                    </li>
-                    <li class="listitembaihat">
-                        <div class="item_content">
-                            <a href="thatbatngo_baihat.html" title="Thật bất ngờ" class="song-name">Phải chi em biết</a><a href="#" title="Trúc Nhân" class="singer-name"> - Lệ Quyên</a>
-                        </div>
-                        <div class="item_listen">
-                            <img src="video/Headphone.png">
-                            <p>13.242.245</p>
-                        </div>
-
-                    </li>
-                </div>
-                <!--ket thuc bai hat phai-->
-
             </div>
         </div>
 

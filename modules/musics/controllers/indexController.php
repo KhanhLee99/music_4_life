@@ -77,3 +77,14 @@ function ajax_delete_cmtAction(){
     );
     echo json_encode($result);
 }
+
+function indexAction(){
+    $id = (int)$_GET['id'];
+    $list_musics_cat = get_list_musics_by_cat_id($id);
+    $list_song_cat = get_list_song_cat();
+    $list_album = get_list_album();
+    $data['list_song_cat'] = $list_song_cat;
+    $data['list_album'] = $list_album;
+    $data['list_musics_cat'] = $list_musics_cat;
+    load_view('index' , $data);
+}

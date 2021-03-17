@@ -1,22 +1,18 @@
-
 <!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
 <html>
 
 <head>
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
     <link href="public/css/main.css" rel="stylesheet" type="text/css" media="screen,print" />
+    <link href="public/css/videonhactre.css" rel="stylesheet" type="text/css" />
     <title>Music4Life</title>
-    <meta name="keywords" content="india, travel, adventure, bookmarking" />
-    <meta name="description" content="This is site ment for indian travellers." />
-    <link rel="stylesheet" href="public/css/style.css" type="text/css">
     <link href="public/SpryAssets_AN/SpryTabbedPanels_VD.css" rel="stylesheet" type="text/css" />
+    <link href="http://vjs.zencdn.net/4.11/video-js.css" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="public/css/header.css" />
     <link rel="stylesheet" type="text/css" href="public/css/menu.css" />
     <link rel="stylesheet" type="text/css" href="public/css/footer.css" />
-    <script type="text/javascript" src="public/js/jquery-2.2.3.min.js"></script>
     <script src="public/SpryAssets_AN/SpryTabbedPanels.js" type="text/javascript"></script>
-    <link rel="stylesheet" type="text/css" href="public/css/binhluan.css" />
-
+    <script src="http://vjs.zencdn.net/4.11/video.js"></script>
 </head>
 
 <body>
@@ -48,3 +44,5 @@
         </div>
     </div>
     <!-- Header : End -->
+    
+    

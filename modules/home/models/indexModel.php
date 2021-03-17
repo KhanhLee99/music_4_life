@@ -19,3 +19,13 @@ function get_file_song_image_by_song_id($id)
     }
     return false;
 }
+
+function get_list_song_cat()
+{
+    return db_fetch_array("SELECT * FROM `tbl_song_cat`");
+}
+function get_list_album()
+{
+    return db_fetch_array("SELECT * FROM `tbl_albums`");
+}
+

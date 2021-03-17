@@ -31,6 +31,14 @@ function get_user_by_id($id)
     return false;
 }
 
+function get_list_musics_by_cat_id($id)
+{
+    if (!empty($id)) {
+        return db_fetch_array("SELECT * FROM `tbl_songs` WHERE `song_cat_id` = {$id}");
+    }
+    return false;
+}
+
 function update_song($table, $data, $where)
 {
     db_update($table, $data, $where);
@@ -70,3 +78,12 @@ function delete_cmt_by_id($id)
 // {
 //     return db_fetch_array("SELECT * FROM `tbl_artists`");
 // }
+
+function get_list_song_cat()
+{
+    return db_fetch_array("SELECT * FROM `tbl_song_cat`");
+}
+function get_list_album()
+{
+    return db_fetch_array("SELECT * FROM `tbl_albums`");
+}

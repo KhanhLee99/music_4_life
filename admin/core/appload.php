@@ -36,7 +36,7 @@ if (is_array($autoload)) {
 
 
 //
-//connect db
+//connect db 
 db_connect($db);
 
 require COREPATH . DIRECTORY_SEPARATOR . 'router.php';
