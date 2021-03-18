@@ -69,6 +69,14 @@ function get_comments_by_song_id($id)
     return false;
 }
 
+function get_cat_by_id($id)
+{
+    if (!empty($id)) {
+        return db_fetch_row("SELECT `name` FROM `tbl_song_cat` WHERE `id` = {$id}");
+    }
+    return false;
+}
+
 function delete_cmt_by_id($id)
 {
     return db_delete("`tbl_comment`", "`id` = {$id}");

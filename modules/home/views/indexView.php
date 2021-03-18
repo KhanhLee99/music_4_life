@@ -191,29 +191,29 @@ get_header();
             <h1><a href="video.html" style=" color:#39C  ">VIDEO / MV &gt;</a></h1>
         </div>
         <div class="videoleft">
-            <div class="vd1"> <a href="Beautiful in White - Westlife  )"><img src="video/a.jpg" alt="Beautiful in White - Westlife" /></a>
+            <div class="vd1"> <a href="Beautiful in White - Westlife  )"><img src="public/video/a.jpg" alt="Beautiful in White - Westlife" /></a>
                 <!--  <p><a href="Beautiful in White - Westlife"    style= "
       font-size: 16px " title="Beautiful in White - Westlife">Beautiful in White - Westlife</a> <br>-->
             </div>
-            <div class="vd2"> <a href="Vẫn luôn chờ mong - Hương Tràm   )"><img src="video/c.jpg" alt="Vẫn luôn chờ mong - Hương Tràm   " /></a> </div>
+            <div class="vd2"> <a href="Vẫn luôn chờ mong - Hương Tràm   )"><img src="public/video/c.jpg" alt="Vẫn luôn chờ mong - Hương Tràm   " /></a> </div>
         </div>
         <div class="videoright">
-            <div class="vr1"> <a href="Giả vờ nhưng em yêu anh "><img src="video/d.jpg" alt="Giả vờ nhưng em yêu anh" /></a>
+            <div class="vr1"> <a href="Giả vờ nhưng em yêu anh "><img src="public/video/d.jpg" alt="Giả vờ nhưng em yêu anh" /></a>
                 <p> <a href="Giả vờ nhưng em yêu anh" title="Giả vờ nhưng em yêu anh" class="song-name">Giả vờ nhưng em yêu anh - </a> <a href="Miu Lê" title="Miu Lê" class="singer-name">Miu Lê</a>
             </div>
-            <div class="vr2"> <a href="Stronger"><img src="video/j.jpg" alt="Stronger" /></a>
+            <div class="vr2"> <a href="Stronger"><img src="public/video/j.jpg" alt="Stronger" /></a>
                 <p><a href="Stronger" title="Stronger" class="song-name">Stronger - </a> <a href="Kelly Clarkson" title="Kelly Clarkson" class="singer-name">Kelly Clarkson</a>
             </div>
-            <div class="vr3"> <a href="Samdado News"><img src="video/h.jpg" alt="Samdado News" /></a>
+            <div class="vr3"> <a href="Samdado News"><img src="public/video/h.jpg" alt="Samdado News" /></a>
                 <p> <a href="Samdado News" title="Samdado News" class="song-name">Samdado News - </a> <a href="KyuHyun" title="KyuHyun" class="singer-name">KyuHyun</a>
             </div>
-            <div class="vr4"> <a href="Đống xanh"><img src="video/e.jpg" alt="Đống xanh" /></a>
+            <div class="vr4"> <a href="Đống xanh"><img src="public/video/e.jpg" alt="Đống xanh" /></a>
                 <p> <a href="Đống xanh" title="Đống xanh" class="song-name">Đồng xanh - </a> <a href="Vy Oanh" title="Vy Oanh" class="singer-name">Vy Oanh</a>
             </div>
-            <div class="vr5"> <a href="Có khi nào rời xa"><img src="video/g.jpg" alt="Có khi nào rời xa" /></a>
+            <div class="vr5"> <a href="Có khi nào rời xa"><img src="public/video/g.jpg" alt="Có khi nào rời xa" /></a>
                 <p> <a href="Có khi nào rời xa" title="Có khi nào rời xa" class="song-name">Có khi nào rời xa - </a> <a href="Bích Phương" title="Bích Phương" class="singer-name">Bích Phương</a>
             </div>
-            <div class="vr6"> <a href="Roar"><img src="video/f.jpg" alt="Roar" /></a>
+            <div class="vr6"> <a href="Roar"><img src="public/video/f.jpg" alt="Roar" /></a>
                 <p> <a href="Roar" title="Roar" class="song-name">Roar - </a> <a href="Katy Perry" title="Katy Perry" class="singer-name">Katy Perry</a>
             </div>
         </div>

@@ -143,7 +143,7 @@ get_header('musics');
         <!--ket thuc list bai hat-->
         <!--bat dau list cac bai hat-->
         <div class="listbaihat">
-            <div class="tieude"><a href="">Bài hát mới</a></div>
+            <div class="tieude"><a href="#">Bài hát > <?php echo $cat['name'] ?></a></div>
             <div class="btn_view_select">
                 <a href="#" title="Nhạc Trẻ" style="background-color:#C30; color:#FFF">Hot nhất</a>
                 <a href="#" title="Trữ Tình">Mới nhất</a>

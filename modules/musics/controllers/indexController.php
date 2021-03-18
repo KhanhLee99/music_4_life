@@ -83,8 +83,10 @@ function indexAction(){
     $list_musics_cat = get_list_musics_by_cat_id($id);
     $list_song_cat = get_list_song_cat();
     $list_album = get_list_album();
+    $cat = get_cat_by_id($id);
     $data['list_song_cat'] = $list_song_cat;
     $data['list_album'] = $list_album;
     $data['list_musics_cat'] = $list_musics_cat;
+    $data['cat'] = $cat;
     load_view('index' , $data);
 }
