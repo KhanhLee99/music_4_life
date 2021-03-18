@@ -34,7 +34,7 @@ function get_user_by_id($id)
 function get_list_musics_by_cat_id($id)
 {
     if (!empty($id)) {
-        return db_fetch_array("SELECT * FROM `tbl_songs` WHERE `song_cat_id` = {$id}");
+        return db_fetch_array("SELECT `tbl_songs`.`id`, `tbl_songs`.`name`, `tbl_songs`.`view`, `tbl_artists`.`name` AS `name_artist`, `tbl_artists`.`id` AS `id_artist` FROM `tbl_songs` INNER JOIN `tbl_artists` ON `tbl_songs`.`artist_id`=`tbl_artists`.`id` WHERE `tbl_songs`.`song_cat_id` = {$id}");
     }
     return false;
 }

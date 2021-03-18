@@ -157,15 +157,15 @@ get_header('musics');
             ?>
                     <li>
                         <div class="item_content">
-                            <a href="?mod=musics&action=detailMusic&id=<?php echo $music['id'] ?>" title="Thật bất ngờ" class="tenbaihat"><?php echo $music['name'] ?></a><a href="#" title="Trúc Nhân" class="tencasi"> - Trúc Nhân</a>
+                            <a href="?mod=musics&action=detailMusic&id=<?php echo $music['id'] ?>" title="Thật bất ngờ" class="tenbaihat"><?php echo $music['name'] ?></a><a href="#" title="Trúc Nhân" class="tencasi"> - <?php echo $music['name_artist'] ?></a>
                         </div>
                         <div class="item_listen">
-                            <img src="video/Headphone.png">
-                            <p>13.242.245</p>
+                            <img src="public/video/Headphone.png">
+                            <p><?php echo number_format($music['view']) ?></p>
                         </div>
                         <div class="item_play">
-                            <a href="#"><img src="video/Toolbar - Play.png"></a>
-                            <a href="#"><img src="video/addlove.png"></a>
+                            <a href="?mod=musics&action=detailMusic&id=<?php echo $music['id'] ?>"><img src="public/video/Toolbar - Play.png"></a>
+                            <a href="#"><img src="public/video/addlove.png"></a>
                         </div>
                     </li>
             <?php
